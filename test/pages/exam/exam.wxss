@@ -1,0 +1,37 @@
+
+.examcontainer {
+  /*height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  box-sizing: border-box;
+  /*background-color:khaki;*/
+  /*margin: 200rpx, 200rpx;*/
+  padding: 100rpx;
+  background-color:khaki;
+} 
+.testArea{
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: left;*/
+  font-weight:bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  color:#4f4f4f;
+}
+.radios{
+  color:darkgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+}
+
+.radio{
+  font-weight: normal;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  display:flex;
+  flex-direction: row;
+}
+

@@ -1,0 +1,69 @@
+<!--exam.wxml-->
+
+<view class="examcontainer">
+
+  <view class="info">
+    <text>页面说明</text>
+  </view>
+
+  <view class="testArea" wx:key = "{{item.id}}" wx:for="{{result}}">
+    <text>{{item.question}}</text>
+    <radio-group id = '{{item.id}}' class="radio-group" bindchange="radioChange">
+      <label class="radios">
+        <view class="radio">
+          <radio id = "1" value="{{item.val1}}" />{{item.ans1}}
+        </view>
+        <view class="radio">
+          <radio id = "2" value="{{item.val2}}" />{{item.ans2}}
+        </view>
+        <view class="radio">
+          <radio id = "3" value="{{item.val3}}" />{{item.ans3}}
+        </view>
+        <view class="radio">
+          <radio id = "4" value="{{item.val4}}" />{{item.ans4}}
+        </view>
+      </label>
+    </radio-group>
+  </view>
+
+  <view class="testArea" wx:key = "{{item.id}}" wx:for="{{multiResult}}">
+    <text>{{item.question}}</text>
+    <checkbox-group id = '{{item.id}}' bindchange="checkboxChange">
+      <label class="radios">
+        <view class = "radio">
+          <checkbox value="{{item.val1}}" />{{item.ans1}}
+        </view>
+        <view class = "radio">
+          <checkbox value="{{item.val2}}" />{{item.ans2}}
+        </view>
+        <view class = "radio">
+          <checkbox value="{{item.val3}}" />{{item.ans3}}
+        </view>
+        <view class = "radio">
+          <checkbox value="{{item.val4}}" />{{item.ans4}}
+        </view>
+        <view class = "radio">
+          <checkbox value="{{item.val5}}" />{{item.ans5}}
+        </view>  
+      </label>
+    </checkbox-group>    
+  </view>
+
+  <view class="testArea" wx:key = "{{item.id}}" wx:for="{{tfResult}}">
+    <text>{{item.question}}</text>
+    <radio-group id = '{{item.id}}' class="radio-group" bindchange="tfChange">
+      <label class="radios">
+        <view class="radio">
+          <radio id = "1" value="{{item.val1}}" />{{item.ans1}}
+        </view>
+        <view class="radio">
+          <radio id = "2" value="{{item.val2}}" />{{item.ans2}}
+        </view>
+      </label>
+    </radio-group>
+  </view>
+
+  <button disabled = '{{disButton}}' type="primary" bindtap="submitButton">{{buttonText}}</button>
+
+
+</view>

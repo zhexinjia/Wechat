@@ -1,0 +1,10 @@
+<!--scan.wxml-->
+
+<view class="container">
+
+
+  <button type="default" bindtap="scanButton">扫码</button>
+
+
+
+</view>

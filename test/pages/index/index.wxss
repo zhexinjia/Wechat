@@ -1,0 +1,39 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.inputview1{
+  margin-top: 90rpx;
+  background-color:aliceblue;
+}
+.inputview2{
+  margin-top: 50rpx;
+  background-color:aliceblue;
+}
+.buttonview{
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.buttons{
+  display:flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: space-between;
+  
+}

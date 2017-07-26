@@ -1,0 +1,32 @@
+/* pages/register/register.wxss */
+
+.registercontainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100rpx;
+  margin-right:100rpx;
+} 
+
+.inputview{
+  margin-top:200rpx;
+  justify-content: center;
+}
+.name{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+
+.section{
+  justify-content: center;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  
+}
+.button{
+  margin-top:50rpx;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+}
